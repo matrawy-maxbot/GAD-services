@@ -136,7 +136,7 @@
     </div>
     <div class="th-section">
         <h1 class="title">Join Our Growing Community<br>of Satisfied Clients</h1>
-        <h3 class="sub-title">We’ve helped numerous businesses unlock their potential through innovative solutions<br>in design, development, and marketing.</h3>
+        <h3 class="sub-title">We’ve helped our clients achieve success by meeting their requirements with innovative solutions<br>in design, development, and marketing.</h3>
         <div class="counter">
             <div class="counter-num">
                 <div class="c-num-container" style="top: calc(-1* 360px* 4);">
@@ -226,7 +226,7 @@
             <div class="content">
                 <h1>Creative Projects & Media Solutions</h1>
                 <h4>Our creative team excels in producing high-quality visual content, including <span>ad designs, video production, and multimedia solutions.</span> We work closely with you to craft media that reflects your vision and connects with your target audience.</h4>
-                <button><span>Explore our designs</span><img src="images/fourth section/explore design icon.svg" alt="explore design"></button>
+                <button onclick="designPrices()"><span>Explore our designs</span><img src="images/fourth section/explore design icon.svg" alt="explore design"></button>
             </div>
             <div class="section-images">
                 <div class="center">
@@ -250,7 +250,7 @@
             <div class="content">
                 <h1>Custom <span>Web</span> and <span>Mobile App</span> Development</h1>
                 <h4>We provide comprehensive solutions for designing and developing websites and mobile applications, customized to meet your business requirements. Our focus is on creating user-friendly interfaces and high-performance systems to deliver a unique and efficient user experience.</h4>
-                <button><span>Explore our projects</span></button>
+                <button onclick="programmingPrices()"><span>Explore our projects</span></button>
             </div>
             <div class="section-images">
                 <div class="desktop">
@@ -281,7 +281,7 @@
                     <h2>Boost Your Digital Presence and Brand Impact</h2>
                 </div>
                 <h4>With advanced digital marketing strategies and distinctive brand development, we help you reach your target audience and increase engagement with your brand. Our goal is to create content that reflects your vision and captures attention.</h4>
-                <button><span>Let’s Grow Your Audience</span><img src="images/fourth section/marketting button icon.png" alt="marketing design"></button>
+                <button onclick="marketingPrices()"><span>Let’s Grow Your Audience</span><img src="images/fourth section/marketting button icon.png" alt="marketing design"></button>
             </div>
             <div class="section-images">
                 <img class="design-1" src="images/fourth section/design background transparent.svg" alt="marketing design">
@@ -489,19 +489,19 @@
                             <img class="whatsapp-line" src="images/last section/whatsapp line small.svg" alt="whatsapp line">
                             <div class="line-point"></div>
                         </div>
-                        <div class="icon-parent">
+                        <div class="icon-parent" onclick="getWhatsappAccount()">
                             <img class="whatsapp-icon" src="images/last section/whatsapp icon.svg" alt="whatsapp icon">
                             <h5>Chat with us on <span>Whatsapp</span><span class="long-term"> using the<br>provided <span>contact numbers</span></span></h5>
                         </div>
                     </div>
                 </div>
                 <div class="row behance-facebook">
-                    <div class="behance">
+                    <div class="behance" onclick="getBehanceAccount()">
                         <img class="behance-icon" src="images/last section/behance icon.svg" alt="behance icon">
                         <h5>Explore our projects in <span>Behance</span></h5>
                         <h6>overview of our projects</h6>
                     </div>
-                    <div class="facebook">
+                    <div class="facebook" onclick="getFacebookPage()">
                         <img class="facebook-icon" src="images/last section/facebook icon.svg" alt="facebook icon">
                         <h5>Follow us on <span>Facebook</span> page</h5>
                         <h6>to see last news</h6>
@@ -511,14 +511,14 @@
             <img class="support-img" src="images/last section/support design.png" alt="support img">
             <div class="top-left">
                 <img class="line" src="images/last section/behance line.svg" alt="line">
-                <div class="behance">
+                <div class="behance" onclick="getBehanceAccount()">
                     <img class="behance-icon" src="images/last section/behance icon.svg" alt="behance icon">
                     <h5>Explore our projects in <span>Behance</span><img src="images/last section/behance text line.svg" alt="behance text line"></h5>
                 </div>
             </div>
             <div class="bottom-left">
                 <img class="line" src="images/last section/facebook line.svg" alt="line">
-                <div class="facebook">
+                <div class="facebook" onclick="getFacebookPage()">
                     <img class="facebook-icon" src="images/last section/facebook icon.svg" alt="facebook icon">
                     <h5>Follow us on <span>Facebook</span> page</h5>
                     <h6>to see last news</h6>
@@ -537,7 +537,7 @@
                             <img class="line" src="images/last section/whatsapp line.svg" alt="line">
                             <div class="start-point"></div>
                             <div class="end-point"></div>
-                            <div class="whatsapp">
+                            <div class="whatsapp" onclick="getWhatsappAccount()">
                                 <img class="whatsapp-icon" src="images/last section/whatsapp icon.svg" alt="whatsapp icon">
                                 <h5>Chat with us on <span>Whatsapp</span> using the<br>provided <span>contact numbers</span></h5>
                             </div>
@@ -569,6 +569,521 @@
         </div>
     </div>
 
+    <div class="prices-parent">
+        <div class="prices-container">
+            <div class="header">
+                <div class="background"></div>
+                <div class="close" onclick="closePrices()">
+                    <svg viewBox="0 0 24 24"><path d="M22 11H4.414l5.293-5.293a1 1 0 1 0-1.414-1.414l-7 7a1 1 0 0 0 0 1.414l7 7a1 1 0 0 0 1.414-1.414L4.414 13H22a1 1 0 0 0 0-2z"></path></svg>
+                </div>
+                <div class="title">Design & Print Prices</div>
+                <div class="contact-us">
+                    <svg viewBox="0 0 512 512"><path d="M307.66 465.229c0-17.696-14.346-32.042-32.042-32.042h-39.236a32.042 32.042 0 0 0-32.042 32.042c0 17.696 14.346 32.042 32.042 32.042h39.236c17.696 0 32.042-14.346 32.042-32.042zM67.361 382.606c5.352.409 11.827.644 18.331.263a90.96 90.96 0 0 0 89.238 73.36h12.226a50.247 50.247 0 0 0-.008 18H174.93a108.957 108.957 0 0 1-107.569-91.623zm-9.156-19.153A69.812 69.812 0 0 1 0 294.613V252.07a69.812 69.812 0 0 1 69.811-69.812h4.647C81.886 88.502 160.328 14.729 256 14.729s174.114 73.773 181.542 167.529h4.647A69.812 69.812 0 0 1 512 252.07v42.543a69.812 69.812 0 0 1-69.811 69.812h-20.601c-8.544 0-15.47-6.927-15.47-15.47V196.847c0-82.908-67.21-150.118-150.118-150.118s-150.118 67.21-150.118 150.118v152.108c0 6.032-3.453 11.259-8.491 13.81-13.868 4.812-35.375 1.331-39.186.688z"></path></svg>
+                    <span>CONTACT US</span>
+                </div>
+            </div>
+            <div class="content">
+                <div class="price-container">
+                    <div class="header">
+                        <div class="data">
+                            <h1>Basic Website Package</h1>
+                            <div class="price">
+                                <b class="usd">1.99 <span>USD</span></b>
+                                <b class="egp">100.99 <span>EGP</span></b>
+                            </div>
+                        </div>
+                        <div class="logo">
+                            <div class="background"></div>
+                            <svg viewBox="0 0 64 64"><path d="M54.395 26.338 42.816 16.104h-4.937l5.583 10.234zM21.056 16.104h-4.937L4.551 26.338h10.933zM41.047 26.338l-5.583-10.234H23.472l-5.573 10.234zM17.666 28.457l11.728 29.482 11.865-29.482zM4 28.457 25.993 55.1 15.388 28.457zM43.547 28.457 32.953 54.761l21.972-26.304zM7.518 11.1H9.38v1.864a1.06 1.06 0 0 0 2.12 0V11.1h1.861a1.06 1.06 0 0 0 0-2.119H11.5V7.12a1.06 1.06 0 1 0-2.119 0v1.862H7.518a1.06 1.06 0 0 0 0 2.119zM58.961 38.935h-1.862v-1.863a1.06 1.06 0 0 0-2.119 0v1.863h-1.863a1.06 1.06 0 1 0 0 2.119h1.863v1.862a1.06 1.06 0 1 0 2.119 0v-1.862h1.862a1.06 1.06 0 0 0 0-2.119z"></path></svg>
+                        </div>
+                    </div>
+                    <div class="properties">
+                        <div class="property">
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24"><path d="M20.614 5.649a1 1 0 0 1 .084 1.422L10.184 18.74a1 1 0 0 1-1.428.058l-6.084-5.727a1.008 1.008 0 0 1-.09-1.36 1.008 1.008 0 0 1 1.455-.126l4.72 4.246a1 1 0 0 0 1.412-.074l9.043-10.027a1 1 0 0 1 1.402-.082z"></path></svg>
+                            </div>
+                            <div class="subtitle">Design of a simple website (1 to 3 pages)</div>
+                        </div>
+                        <div class="property">
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24"><path d="M20.614 5.649a1 1 0 0 1 .084 1.422L10.184 18.74a1 1 0 0 1-1.428.058l-6.084-5.727a1.008 1.008 0 0 1-.09-1.36 1.008 1.008 0 0 1 1.455-.126l4.72 4.246a1 1 0 0 0 1.412-.074l9.043-10.027a1 1 0 0 1 1.402-.082z"></path></svg>
+                            </div>
+                            <div class="subtitle">Basic SEO optimization</div>
+                        </div>
+                        <div class="property">
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24"><path d="M20.614 5.649a1 1 0 0 1 .084 1.422L10.184 18.74a1 1 0 0 1-1.428.058l-6.084-5.727a1.008 1.008 0 0 1-.09-1.36 1.008 1.008 0 0 1 1.455-.126l4.72 4.246a1 1 0 0 0 1.412-.074l9.043-10.027a1 1 0 0 1 1.402-.082z"></path></svg>
+                            </div>
+                            <div class="subtitle">Simple visual identity design (logo, colors)</div>
+                        </div>
+                        <div class="property">
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24"><path d="M20.614 5.649a1 1 0 0 1 .084 1.422L10.184 18.74a1 1 0 0 1-1.428.058l-6.084-5.727a1.008 1.008 0 0 1-.09-1.36 1.008 1.008 0 0 1 1.455-.126l4.72 4.246a1 1 0 0 0 1.412-.074l9.043-10.027a1 1 0 0 1 1.402-.082z"></path></svg>
+                            </div>
+                            <div class="subtitle">Free hosting and domain for 3 months</div>
+                        </div>
+                    </div>
+                    <div class="options">
+                        <div class="option">
+                            <div class="left">
+                                <div class="icon">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="subtitle">add an extra page</div>
+                            </div>
+                            <div class="option-price">
+                                <b class="usd">1.99 <span>USD</span></b>
+                                <b class="egp">100.99 <span>EGP</span></b>
+                            </div>
+                        </div>
+                        <div class="option">
+                            <div class="left">
+                                <div class="icon">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="subtitle">Technical support for two months after launch to resolve any issues</div>
+                            </div>
+                            <div class="option-price">
+                                <b class="usd">1.99 <span>USD</span></b>
+                                <b class="egp">100.99 <span>EGP</span></b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <button>Order Now</button>
+                        <div class="note"></div>
+                    </div>
+                </div>
+                <div class="price-container">
+                    <div class="header">
+                        <div class="data">
+                            <h1>Basic Website Package</h1>
+                            <div class="price">
+                                <b class="usd">1.99 <span>USD</span></b>
+                                <b class="egp">100.99 <span>EGP</span></b>
+                            </div>
+                        </div>
+                        <div class="logo">
+                            <div class="background"></div>
+                            <svg viewBox="0 0 64 64"><path d="M54.395 26.338 42.816 16.104h-4.937l5.583 10.234zM21.056 16.104h-4.937L4.551 26.338h10.933zM41.047 26.338l-5.583-10.234H23.472l-5.573 10.234zM17.666 28.457l11.728 29.482 11.865-29.482zM4 28.457 25.993 55.1 15.388 28.457zM43.547 28.457 32.953 54.761l21.972-26.304zM7.518 11.1H9.38v1.864a1.06 1.06 0 0 0 2.12 0V11.1h1.861a1.06 1.06 0 0 0 0-2.119H11.5V7.12a1.06 1.06 0 1 0-2.119 0v1.862H7.518a1.06 1.06 0 0 0 0 2.119zM58.961 38.935h-1.862v-1.863a1.06 1.06 0 0 0-2.119 0v1.863h-1.863a1.06 1.06 0 1 0 0 2.119h1.863v1.862a1.06 1.06 0 1 0 2.119 0v-1.862h1.862a1.06 1.06 0 0 0 0-2.119z"></path></svg>
+                        </div>
+                    </div>
+                    <div class="properties">
+                        <div class="property">
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24"><path d="M20.614 5.649a1 1 0 0 1 .084 1.422L10.184 18.74a1 1 0 0 1-1.428.058l-6.084-5.727a1.008 1.008 0 0 1-.09-1.36 1.008 1.008 0 0 1 1.455-.126l4.72 4.246a1 1 0 0 0 1.412-.074l9.043-10.027a1 1 0 0 1 1.402-.082z"></path></svg>
+                            </div>
+                            <div class="subtitle">Design of a simple website (1 to 3 pages)</div>
+                        </div>
+                        <div class="property">
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24"><path d="M20.614 5.649a1 1 0 0 1 .084 1.422L10.184 18.74a1 1 0 0 1-1.428.058l-6.084-5.727a1.008 1.008 0 0 1-.09-1.36 1.008 1.008 0 0 1 1.455-.126l4.72 4.246a1 1 0 0 0 1.412-.074l9.043-10.027a1 1 0 0 1 1.402-.082z"></path></svg>
+                            </div>
+                            <div class="subtitle">Basic SEO optimization</div>
+                        </div>
+                        <div class="property">
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24"><path d="M20.614 5.649a1 1 0 0 1 .084 1.422L10.184 18.74a1 1 0 0 1-1.428.058l-6.084-5.727a1.008 1.008 0 0 1-.09-1.36 1.008 1.008 0 0 1 1.455-.126l4.72 4.246a1 1 0 0 0 1.412-.074l9.043-10.027a1 1 0 0 1 1.402-.082z"></path></svg>
+                            </div>
+                            <div class="subtitle">Simple visual identity design (logo, colors)</div>
+                        </div>
+                        <div class="property">
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24"><path d="M20.614 5.649a1 1 0 0 1 .084 1.422L10.184 18.74a1 1 0 0 1-1.428.058l-6.084-5.727a1.008 1.008 0 0 1-.09-1.36 1.008 1.008 0 0 1 1.455-.126l4.72 4.246a1 1 0 0 0 1.412-.074l9.043-10.027a1 1 0 0 1 1.402-.082z"></path></svg>
+                            </div>
+                            <div class="subtitle">Free hosting and domain for 3 months</div>
+                        </div>
+                    </div>
+                    <div class="options">
+                        <div class="option">
+                            <div class="left">
+                                <div class="icon">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="subtitle">add an extra page</div>
+                            </div>
+                            <div class="option-price">
+                                <b class="usd">1.99 <span>USD</span></b>
+                                <b class="egp">100.99 <span>EGP</span></b>
+                            </div>
+                        </div>
+                        <div class="option">
+                            <div class="left">
+                                <div class="icon">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="subtitle">Technical support for two months after launch to resolve any issues</div>
+                            </div>
+                            <div class="option-price">
+                                <b class="usd">1.99 <span>USD</span></b>
+                                <b class="egp">100.99 <span>EGP</span></b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <button>Order Now</button>
+                        <div class="note"></div>
+                    </div>
+                </div>
+                <div class="price-container">
+                    <div class="header">
+                        <div class="data">
+                            <h1>Basic Website Package</h1>
+                            <div class="price">
+                                <b class="usd">1.99 <span>USD</span></b>
+                                <b class="egp">100.99 <span>EGP</span></b>
+                            </div>
+                        </div>
+                        <div class="logo">
+                            <div class="background"></div>
+                            <svg viewBox="0 0 64 64"><path d="M54.395 26.338 42.816 16.104h-4.937l5.583 10.234zM21.056 16.104h-4.937L4.551 26.338h10.933zM41.047 26.338l-5.583-10.234H23.472l-5.573 10.234zM17.666 28.457l11.728 29.482 11.865-29.482zM4 28.457 25.993 55.1 15.388 28.457zM43.547 28.457 32.953 54.761l21.972-26.304zM7.518 11.1H9.38v1.864a1.06 1.06 0 0 0 2.12 0V11.1h1.861a1.06 1.06 0 0 0 0-2.119H11.5V7.12a1.06 1.06 0 1 0-2.119 0v1.862H7.518a1.06 1.06 0 0 0 0 2.119zM58.961 38.935h-1.862v-1.863a1.06 1.06 0 0 0-2.119 0v1.863h-1.863a1.06 1.06 0 1 0 0 2.119h1.863v1.862a1.06 1.06 0 1 0 2.119 0v-1.862h1.862a1.06 1.06 0 0 0 0-2.119z"></path></svg>
+                        </div>
+                    </div>
+                    <div class="properties">
+                        <div class="property">
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24"><path d="M20.614 5.649a1 1 0 0 1 .084 1.422L10.184 18.74a1 1 0 0 1-1.428.058l-6.084-5.727a1.008 1.008 0 0 1-.09-1.36 1.008 1.008 0 0 1 1.455-.126l4.72 4.246a1 1 0 0 0 1.412-.074l9.043-10.027a1 1 0 0 1 1.402-.082z"></path></svg>
+                            </div>
+                            <div class="subtitle">Design of a simple website (1 to 3 pages)</div>
+                        </div>
+                        <div class="property">
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24"><path d="M20.614 5.649a1 1 0 0 1 .084 1.422L10.184 18.74a1 1 0 0 1-1.428.058l-6.084-5.727a1.008 1.008 0 0 1-.09-1.36 1.008 1.008 0 0 1 1.455-.126l4.72 4.246a1 1 0 0 0 1.412-.074l9.043-10.027a1 1 0 0 1 1.402-.082z"></path></svg>
+                            </div>
+                            <div class="subtitle">Basic SEO optimization</div>
+                        </div>
+                        <div class="property">
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24"><path d="M20.614 5.649a1 1 0 0 1 .084 1.422L10.184 18.74a1 1 0 0 1-1.428.058l-6.084-5.727a1.008 1.008 0 0 1-.09-1.36 1.008 1.008 0 0 1 1.455-.126l4.72 4.246a1 1 0 0 0 1.412-.074l9.043-10.027a1 1 0 0 1 1.402-.082z"></path></svg>
+                            </div>
+                            <div class="subtitle">Simple visual identity design (logo, colors)</div>
+                        </div>
+                        <div class="property">
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24"><path d="M20.614 5.649a1 1 0 0 1 .084 1.422L10.184 18.74a1 1 0 0 1-1.428.058l-6.084-5.727a1.008 1.008 0 0 1-.09-1.36 1.008 1.008 0 0 1 1.455-.126l4.72 4.246a1 1 0 0 0 1.412-.074l9.043-10.027a1 1 0 0 1 1.402-.082z"></path></svg>
+                            </div>
+                            <div class="subtitle">Free hosting and domain for 3 months</div>
+                        </div>
+                    </div>
+                    <div class="options">
+                        <div class="option">
+                            <div class="left">
+                                <div class="icon">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="subtitle">add an extra page</div>
+                            </div>
+                            <div class="option-price">
+                                <b class="usd">1.99 <span>USD</span></b>
+                                <b class="egp">100.99 <span>EGP</span></b>
+                            </div>
+                        </div>
+                        <div class="option">
+                            <div class="left">
+                                <div class="icon">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="subtitle">Technical support for two months after launch to resolve any issues</div>
+                            </div>
+                            <div class="option-price">
+                                <b class="usd">1.99 <span>USD</span></b>
+                                <b class="egp">100.99 <span>EGP</span></b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <button>Order Now</button>
+                        <div class="note"></div>
+                    </div>
+                </div>
+                <div class="price-container">
+                    <div class="header">
+                        <div class="data">
+                            <h1>Basic Website Package</h1>
+                            <div class="price">
+                                <b class="usd">1.99 <span>USD</span></b>
+                                <b class="egp">100.99 <span>EGP</span></b>
+                            </div>
+                        </div>
+                        <div class="logo">
+                            <div class="background"></div>
+                            <svg viewBox="0 0 64 64"><path d="M54.395 26.338 42.816 16.104h-4.937l5.583 10.234zM21.056 16.104h-4.937L4.551 26.338h10.933zM41.047 26.338l-5.583-10.234H23.472l-5.573 10.234zM17.666 28.457l11.728 29.482 11.865-29.482zM4 28.457 25.993 55.1 15.388 28.457zM43.547 28.457 32.953 54.761l21.972-26.304zM7.518 11.1H9.38v1.864a1.06 1.06 0 0 0 2.12 0V11.1h1.861a1.06 1.06 0 0 0 0-2.119H11.5V7.12a1.06 1.06 0 1 0-2.119 0v1.862H7.518a1.06 1.06 0 0 0 0 2.119zM58.961 38.935h-1.862v-1.863a1.06 1.06 0 0 0-2.119 0v1.863h-1.863a1.06 1.06 0 1 0 0 2.119h1.863v1.862a1.06 1.06 0 1 0 2.119 0v-1.862h1.862a1.06 1.06 0 0 0 0-2.119z"></path></svg>
+                        </div>
+                    </div>
+                    <div class="properties">
+                        <div class="property">
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24"><path d="M20.614 5.649a1 1 0 0 1 .084 1.422L10.184 18.74a1 1 0 0 1-1.428.058l-6.084-5.727a1.008 1.008 0 0 1-.09-1.36 1.008 1.008 0 0 1 1.455-.126l4.72 4.246a1 1 0 0 0 1.412-.074l9.043-10.027a1 1 0 0 1 1.402-.082z"></path></svg>
+                            </div>
+                            <div class="subtitle">Design of a simple website (1 to 3 pages)</div>
+                        </div>
+                        <div class="property">
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24"><path d="M20.614 5.649a1 1 0 0 1 .084 1.422L10.184 18.74a1 1 0 0 1-1.428.058l-6.084-5.727a1.008 1.008 0 0 1-.09-1.36 1.008 1.008 0 0 1 1.455-.126l4.72 4.246a1 1 0 0 0 1.412-.074l9.043-10.027a1 1 0 0 1 1.402-.082z"></path></svg>
+                            </div>
+                            <div class="subtitle">Basic SEO optimization</div>
+                        </div>
+                        <div class="property">
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24"><path d="M20.614 5.649a1 1 0 0 1 .084 1.422L10.184 18.74a1 1 0 0 1-1.428.058l-6.084-5.727a1.008 1.008 0 0 1-.09-1.36 1.008 1.008 0 0 1 1.455-.126l4.72 4.246a1 1 0 0 0 1.412-.074l9.043-10.027a1 1 0 0 1 1.402-.082z"></path></svg>
+                            </div>
+                            <div class="subtitle">Simple visual identity design (logo, colors)</div>
+                        </div>
+                        <div class="property">
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24"><path d="M20.614 5.649a1 1 0 0 1 .084 1.422L10.184 18.74a1 1 0 0 1-1.428.058l-6.084-5.727a1.008 1.008 0 0 1-.09-1.36 1.008 1.008 0 0 1 1.455-.126l4.72 4.246a1 1 0 0 0 1.412-.074l9.043-10.027a1 1 0 0 1 1.402-.082z"></path></svg>
+                            </div>
+                            <div class="subtitle">Free hosting and domain for 3 months</div>
+                        </div>
+                    </div>
+                    <div class="options">
+                        <div class="option">
+                            <div class="left">
+                                <div class="icon">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="subtitle">add an extra page</div>
+                            </div>
+                            <div class="option-price">
+                                <b class="usd">1.99 <span>USD</span></b>
+                                <b class="egp">100.99 <span>EGP</span></b>
+                            </div>
+                        </div>
+                        <div class="option">
+                            <div class="left">
+                                <div class="icon">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="subtitle">Technical support for two months after launch to resolve any issues</div>
+                            </div>
+                            <div class="option-price">
+                                <b class="usd">1.99 <span>USD</span></b>
+                                <b class="egp">100.99 <span>EGP</span></b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <button>Order Now</button>
+                        <div class="note"></div>
+                    </div>
+                </div>
+                <div class="price-container">
+                    <div class="header">
+                        <div class="data">
+                            <h1>Basic Website Package</h1>
+                            <div class="price">
+                                <b class="usd">1.99 <span>USD</span></b>
+                                <b class="egp">100.99 <span>EGP</span></b>
+                            </div>
+                        </div>
+                        <div class="logo">
+                            <div class="background"></div>
+                            <svg viewBox="0 0 64 64"><path d="M54.395 26.338 42.816 16.104h-4.937l5.583 10.234zM21.056 16.104h-4.937L4.551 26.338h10.933zM41.047 26.338l-5.583-10.234H23.472l-5.573 10.234zM17.666 28.457l11.728 29.482 11.865-29.482zM4 28.457 25.993 55.1 15.388 28.457zM43.547 28.457 32.953 54.761l21.972-26.304zM7.518 11.1H9.38v1.864a1.06 1.06 0 0 0 2.12 0V11.1h1.861a1.06 1.06 0 0 0 0-2.119H11.5V7.12a1.06 1.06 0 1 0-2.119 0v1.862H7.518a1.06 1.06 0 0 0 0 2.119zM58.961 38.935h-1.862v-1.863a1.06 1.06 0 0 0-2.119 0v1.863h-1.863a1.06 1.06 0 1 0 0 2.119h1.863v1.862a1.06 1.06 0 1 0 2.119 0v-1.862h1.862a1.06 1.06 0 0 0 0-2.119z"></path></svg>
+                        </div>
+                    </div>
+                    <div class="properties">
+                        <div class="property">
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24"><path d="M20.614 5.649a1 1 0 0 1 .084 1.422L10.184 18.74a1 1 0 0 1-1.428.058l-6.084-5.727a1.008 1.008 0 0 1-.09-1.36 1.008 1.008 0 0 1 1.455-.126l4.72 4.246a1 1 0 0 0 1.412-.074l9.043-10.027a1 1 0 0 1 1.402-.082z"></path></svg>
+                            </div>
+                            <div class="subtitle">Design of a simple website (1 to 3 pages)</div>
+                        </div>
+                        <div class="property">
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24"><path d="M20.614 5.649a1 1 0 0 1 .084 1.422L10.184 18.74a1 1 0 0 1-1.428.058l-6.084-5.727a1.008 1.008 0 0 1-.09-1.36 1.008 1.008 0 0 1 1.455-.126l4.72 4.246a1 1 0 0 0 1.412-.074l9.043-10.027a1 1 0 0 1 1.402-.082z"></path></svg>
+                            </div>
+                            <div class="subtitle">Basic SEO optimization</div>
+                        </div>
+                        <div class="property">
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24"><path d="M20.614 5.649a1 1 0 0 1 .084 1.422L10.184 18.74a1 1 0 0 1-1.428.058l-6.084-5.727a1.008 1.008 0 0 1-.09-1.36 1.008 1.008 0 0 1 1.455-.126l4.72 4.246a1 1 0 0 0 1.412-.074l9.043-10.027a1 1 0 0 1 1.402-.082z"></path></svg>
+                            </div>
+                            <div class="subtitle">Simple visual identity design (logo, colors)</div>
+                        </div>
+                        <div class="property">
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24"><path d="M20.614 5.649a1 1 0 0 1 .084 1.422L10.184 18.74a1 1 0 0 1-1.428.058l-6.084-5.727a1.008 1.008 0 0 1-.09-1.36 1.008 1.008 0 0 1 1.455-.126l4.72 4.246a1 1 0 0 0 1.412-.074l9.043-10.027a1 1 0 0 1 1.402-.082z"></path></svg>
+                            </div>
+                            <div class="subtitle">Free hosting and domain for 3 months</div>
+                        </div>
+                    </div>
+                    <div class="options">
+                        <div class="option">
+                            <div class="left">
+                                <div class="icon">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="subtitle">add an extra page</div>
+                            </div>
+                            <div class="option-price">
+                                <b class="usd">1.99 <span>USD</span></b>
+                                <b class="egp">100.99 <span>EGP</span></b>
+                            </div>
+                        </div>
+                        <div class="option">
+                            <div class="left">
+                                <div class="icon">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="subtitle">Technical support for two months after launch to resolve any issues</div>
+                            </div>
+                            <div class="option-price">
+                                <b class="usd">1.99 <span>USD</span></b>
+                                <b class="egp">100.99 <span>EGP</span></b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <button>Order Now</button>
+                        <div class="note"></div>
+                    </div>
+                </div>
+                <div class="price-container">
+                    <div class="header">
+                        <div class="data">
+                            <h1>Basic Website Package</h1>
+                            <div class="price">
+                                <b class="usd">1.99 <span>USD</span></b>
+                                <b class="egp">100.99 <span>EGP</span></b>
+                            </div>
+                        </div>
+                        <div class="logo">
+                            <div class="background"></div>
+                            <svg viewBox="0 0 64 64"><path d="M54.395 26.338 42.816 16.104h-4.937l5.583 10.234zM21.056 16.104h-4.937L4.551 26.338h10.933zM41.047 26.338l-5.583-10.234H23.472l-5.573 10.234zM17.666 28.457l11.728 29.482 11.865-29.482zM4 28.457 25.993 55.1 15.388 28.457zM43.547 28.457 32.953 54.761l21.972-26.304zM7.518 11.1H9.38v1.864a1.06 1.06 0 0 0 2.12 0V11.1h1.861a1.06 1.06 0 0 0 0-2.119H11.5V7.12a1.06 1.06 0 1 0-2.119 0v1.862H7.518a1.06 1.06 0 0 0 0 2.119zM58.961 38.935h-1.862v-1.863a1.06 1.06 0 0 0-2.119 0v1.863h-1.863a1.06 1.06 0 1 0 0 2.119h1.863v1.862a1.06 1.06 0 1 0 2.119 0v-1.862h1.862a1.06 1.06 0 0 0 0-2.119z"></path></svg>
+                        </div>
+                    </div>
+                    <div class="properties">
+                        <div class="property">
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24"><path d="M20.614 5.649a1 1 0 0 1 .084 1.422L10.184 18.74a1 1 0 0 1-1.428.058l-6.084-5.727a1.008 1.008 0 0 1-.09-1.36 1.008 1.008 0 0 1 1.455-.126l4.72 4.246a1 1 0 0 0 1.412-.074l9.043-10.027a1 1 0 0 1 1.402-.082z"></path></svg>
+                            </div>
+                            <div class="subtitle">Design of a simple website (1 to 3 pages)</div>
+                        </div>
+                        <div class="property">
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24"><path d="M20.614 5.649a1 1 0 0 1 .084 1.422L10.184 18.74a1 1 0 0 1-1.428.058l-6.084-5.727a1.008 1.008 0 0 1-.09-1.36 1.008 1.008 0 0 1 1.455-.126l4.72 4.246a1 1 0 0 0 1.412-.074l9.043-10.027a1 1 0 0 1 1.402-.082z"></path></svg>
+                            </div>
+                            <div class="subtitle">Basic SEO optimization</div>
+                        </div>
+                        <div class="property">
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24"><path d="M20.614 5.649a1 1 0 0 1 .084 1.422L10.184 18.74a1 1 0 0 1-1.428.058l-6.084-5.727a1.008 1.008 0 0 1-.09-1.36 1.008 1.008 0 0 1 1.455-.126l4.72 4.246a1 1 0 0 0 1.412-.074l9.043-10.027a1 1 0 0 1 1.402-.082z"></path></svg>
+                            </div>
+                            <div class="subtitle">Simple visual identity design (logo, colors)</div>
+                        </div>
+                        <div class="property">
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24"><path d="M20.614 5.649a1 1 0 0 1 .084 1.422L10.184 18.74a1 1 0 0 1-1.428.058l-6.084-5.727a1.008 1.008 0 0 1-.09-1.36 1.008 1.008 0 0 1 1.455-.126l4.72 4.246a1 1 0 0 0 1.412-.074l9.043-10.027a1 1 0 0 1 1.402-.082z"></path></svg>
+                            </div>
+                            <div class="subtitle">Free hosting and domain for 3 months</div>
+                        </div>
+                    </div>
+                    <div class="options">
+                        <div class="option">
+                            <div class="left">
+                                <div class="icon">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="subtitle">add an extra page</div>
+                            </div>
+                            <div class="option-price">
+                                <b class="usd">1.99 <span>USD</span></b>
+                                <b class="egp">100.99 <span>EGP</span></b>
+                            </div>
+                        </div>
+                        <div class="option">
+                            <div class="left">
+                                <div class="icon">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="subtitle">Technical support for two months after launch to resolve any issues</div>
+                            </div>
+                            <div class="option-price">
+                                <b class="usd">1.99 <span>USD</span></b>
+                                <b class="egp">100.99 <span>EGP</span></b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <button>Order Now</button>
+                        <div class="note"></div>
+                    </div>
+                </div>
+                <div class="price-container">
+                    <div class="header">
+                        <div class="data">
+                            <h1>Basic Website Package</h1>
+                            <div class="price">
+                                <b class="usd">1.99 <span>USD</span></b>
+                                <b class="egp">100.99 <span>EGP</span></b>
+                            </div>
+                        </div>
+                        <div class="logo">
+                            <div class="background"></div>
+                            <svg viewBox="0 0 64 64"><path d="M54.395 26.338 42.816 16.104h-4.937l5.583 10.234zM21.056 16.104h-4.937L4.551 26.338h10.933zM41.047 26.338l-5.583-10.234H23.472l-5.573 10.234zM17.666 28.457l11.728 29.482 11.865-29.482zM4 28.457 25.993 55.1 15.388 28.457zM43.547 28.457 32.953 54.761l21.972-26.304zM7.518 11.1H9.38v1.864a1.06 1.06 0 0 0 2.12 0V11.1h1.861a1.06 1.06 0 0 0 0-2.119H11.5V7.12a1.06 1.06 0 1 0-2.119 0v1.862H7.518a1.06 1.06 0 0 0 0 2.119zM58.961 38.935h-1.862v-1.863a1.06 1.06 0 0 0-2.119 0v1.863h-1.863a1.06 1.06 0 1 0 0 2.119h1.863v1.862a1.06 1.06 0 1 0 2.119 0v-1.862h1.862a1.06 1.06 0 0 0 0-2.119z"></path></svg>
+                        </div>
+                    </div>
+                    <div class="properties">
+                        <div class="property">
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24"><path d="M20.614 5.649a1 1 0 0 1 .084 1.422L10.184 18.74a1 1 0 0 1-1.428.058l-6.084-5.727a1.008 1.008 0 0 1-.09-1.36 1.008 1.008 0 0 1 1.455-.126l4.72 4.246a1 1 0 0 0 1.412-.074l9.043-10.027a1 1 0 0 1 1.402-.082z"></path></svg>
+                            </div>
+                            <div class="subtitle">Design of a simple website (1 to 3 pages)</div>
+                        </div>
+                        <div class="property">
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24"><path d="M20.614 5.649a1 1 0 0 1 .084 1.422L10.184 18.74a1 1 0 0 1-1.428.058l-6.084-5.727a1.008 1.008 0 0 1-.09-1.36 1.008 1.008 0 0 1 1.455-.126l4.72 4.246a1 1 0 0 0 1.412-.074l9.043-10.027a1 1 0 0 1 1.402-.082z"></path></svg>
+                            </div>
+                            <div class="subtitle">Basic SEO optimization</div>
+                        </div>
+                        <div class="property">
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24"><path d="M20.614 5.649a1 1 0 0 1 .084 1.422L10.184 18.74a1 1 0 0 1-1.428.058l-6.084-5.727a1.008 1.008 0 0 1-.09-1.36 1.008 1.008 0 0 1 1.455-.126l4.72 4.246a1 1 0 0 0 1.412-.074l9.043-10.027a1 1 0 0 1 1.402-.082z"></path></svg>
+                            </div>
+                            <div class="subtitle">Simple visual identity design (logo, colors)</div>
+                        </div>
+                        <div class="property">
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24"><path d="M20.614 5.649a1 1 0 0 1 .084 1.422L10.184 18.74a1 1 0 0 1-1.428.058l-6.084-5.727a1.008 1.008 0 0 1-.09-1.36 1.008 1.008 0 0 1 1.455-.126l4.72 4.246a1 1 0 0 0 1.412-.074l9.043-10.027a1 1 0 0 1 1.402-.082z"></path></svg>
+                            </div>
+                            <div class="subtitle">Free hosting and domain for 3 months</div>
+                        </div>
+                    </div>
+                    <div class="options">
+                        <div class="option">
+                            <div class="left">
+                                <div class="icon">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="subtitle">add an extra page</div>
+                            </div>
+                            <div class="option-price">
+                                <b class="usd">1.99 <span>USD</span></b>
+                                <b class="egp">100.99 <span>EGP</span></b>
+                            </div>
+                        </div>
+                        <div class="option">
+                            <div class="left">
+                                <div class="icon">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="subtitle">Technical support for two months after launch to resolve any issues</div>
+                            </div>
+                            <div class="option-price">
+                                <b class="usd">1.99 <span>USD</span></b>
+                                <b class="egp">100.99 <span>EGP</span></b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <button>Order Now</button>
+                        <div class="note"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
